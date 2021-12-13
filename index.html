@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Fest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 32px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        a{
+            text-decoration: none;
+            font-family: var(--poppins);
+            text-transform: uppercase;
+            color: var(--blau);
+        }
+        :root{
+            --marron:#d4a373;
+            --claro: #fefae0;
+            --verde: #81b29a; 
+            --poppins: 'Poppins', sans-serif;
+            --playfair: 'Playfair Display', serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            padding: 0 2em;
+        }
+        
+        .card_protectoras{
+            display: flex;
+            flex-wrap: column;
+            width: 300px;     
+            height: 200px; 
+        }
+        .protectoras_img{
+            width: 200px;
+            height: 200px;
+        }
+        .img_border{
+            width: 190px;
+            height: 190px;
+            border-radius: 190px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .grupo1{
+            display: flex;
+            flex-direction: row;
+        }
+        .grupo2{
+            display: flex;
+            flex-direction: row;
+        }
+        body>header{
+            display: flex;
+            padding: 50px 0;
+            text-align: center;
+            height: 55vh;
+            background-color: var(--verde);
+        }
+        h1{
+            font-size: 2em;
+            font-family: var(--poppins);
+            font-weight: 600;
+            color: black;
+            display: flex;
+            margin-top: 40px;
+            margin-left: 555px;
+            margin-bottom: 70px;
+        }
+        h2{
+            font-size: 1em;
+            font-family: var(--poppins);
+            color: white;
+        }
+        h3{
+            display: flex;
+            align-items: center;
+            font-family: var(--poppins);
+            font-weight: 500;
+            font-size: 0.5em;
+            text-align: center;
+            color: black;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        h4{
+            margin-top: 30px;
+            margin-left: 18px;
+            font-family: var(--poppins);
+            font-size: 0.5em;
+            font-weight: 400;
+            color: var(--verde)
+        }
+        nav a{
+            font-size: 0.40em;
+            font-family: var(--poppins);
+            font-weight: 500;
+            margin-left: 255px;
+            display: inline;
+            color: white;
+            
+        }
+        section:first-child .container{
+            display: flex;
+            height: 90vh;
+            
+        }
+        .cover{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 220px;
+            height: 300px;
+            padding: 0.5em;
+            margin: 0.5em;
+            flex-grow: 1;
+            background-color: var(--marron);
+        }
+        .cover .cover_img{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            max-height:200px;
+            background: #e9edc9;
+            flex-grow: 1;
+        }
+        .cover .cover_img img{
+           object-fit: cover;
+           object-position: center;
+        }
+        .txt_1{
+            margin-left: 55px;
+            margin-right: 55px;
+            text-align: center;
+        }
+        #textito{
+            margin-left: 55px;
+            margin-right: 60px;
+        }
+        .cover h3{
+            font-family: var(--playfair);
+            font-size: 11pt;
+            color: black;
+        }
+        section .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        section:last-child{
+            height: 80vh;
+            background-color: var(--gris);
+            color: var(--blau);
+        }
+        footer{
+            height: 40vh;
+            background-color: #e9edc9;
+        }
+        .cover2{
+            margin-top: 90px;
+            margin-left: 200px;
+        }
+        .h3_protectora{
+            margin-top: 80px;
+            margin-bottom: 25px;
+            margin-left: 80px;
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 25px;
+        }
+        .img_w{
+            width: 100%;
+            height: 160px;
+        }
+        body{
+            background-color: #FEFAE0;
+        }
+        #adopcion{
+            background-color: white;
+        }
+
+   
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <hgroup>
+                <h1>Cat Fest</h1>
+            </hgroup>
+            <nav>
+                <a href="#gatos">Nuestros mininos</a>
+                <a href="#adopcion">Protectoras</a>
+                <a href="#xxss">Redes sociales</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+            <section id="gatos">
+                <h3 class="h3_protectora">Adopción e información</h3>
+                <div class="container">
+                <div class="grupo1">
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img class="img_w"src="img/gatos1.jpg" alt="jpg">
+                        </div>
+                        <header>
+                            <h3 class="txt_1">Este es un cachorro de gato!</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img class="img_w"src="img/gatos2.jpg" alt="jpg">
+                        </div>
+                        <header>
+                            <h3 class="txt_1">Este es un gato senior</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img class="img_w"src="img/gatos3.jpg" alt="jpg">
+                        </div>
+                        <header>
+                            <h3 class="txt_1">Un gato gracioso!</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img class="img_w"src="img/gatos4.jpg" alt="jpg">
+                        </div>
+                        <header>
+                            <h3 class="txt_1">Los gatos son muy curiosos</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img class="img_w"src="img/gatos6.jpg" alt="jpg">
+                        </div>
+                        <header>
+                            <h3 class="txt_1">Duermen mucho!</h3>
+                        </header>
+                    </div>
+                </div>
+                    <div class="grupo2">
+                        <div class="cover">
+                            <div class="cover_img">
+                                <img class="img_w"src="img/gatos5.jpg" alt="jpg">
+                            </div>
+                            <header>
+                                <h3 class="txt_1">Gatos que tenemos en adopción!</h3>
+                            </header>
+                        </div>
+                        <div class="cover">
+                            <div class="cover_img">
+                                <img class="img_w"src="img/gatos10.jpg" alt="jpg">
+                            </div>
+                            <header>
+                                <h3 class="txt_1">Les encanta la hierba!</h3>
+                            </header>
+                        </div>
+                        <div class="cover">
+                            <div class="cover_img">
+                                <img class="img_w"src="img/gatos7.jpg" alt="jpg">
+                            </div>
+                            <header>
+                                <h3 class="txt_1">Buscan casa!</h3>
+                            </header>
+                        </div>
+                        <div class="cover">
+                            <div class="cover_img">
+                                <img class="img_w"src="img/gatos8.jpg" alt="jpg">
+                            </div>
+                            <header>
+                                <h3 class="txt_1">Nuestros santuarios</h3>
+                            </header>
+                        </div>
+                        <div class="cover">
+                            <div class="cover_img">
+                                <img class="img_w"src="img/gatos9.jpg" alt="jpg">
+                            </div>
+                            <header>
+                                <h3 id="textito">Nuestros veterinarios os ayudarán</h3>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="adopcion">
+                <h3 class="h3_protectora">Protectoras y santuarios</h3>
+                <div class="card_protectoras">
+                <div class="protectoras_img">
+                <div= class="img">
+                    
+                </div>
+                <div class="cover2">
+                    <div class="cover_img2">
+                        <img class="img_border" src="img/gatos8.jpg" alt="jpg">
+                    </div>
+                    <header>
+                        <h3 class="circulos">Todos nuestros santuarios y protectoras</h3>
+                    </header>
+                </div>
+                <div class="cover2">
+                    <div class="cover_img2">
+                        <img class="img_border"src="img/gatos10.jpg" alt="jpg">
+                    </div>
+                    <header>
+                        <h3 class="circulos">Actividades para los gatos</h3>
+                    </header>
+                </div>
+                <div= class="cover2">
+                    <div class="cover_img2">
+                        <img class="img_border"src="img/vet-kitten-835949538-2000.jpg" alt="jpg">
+                    </div>
+                    <header>
+                        <h3 class="circulos">Veterinarios a tu disposición</h3>
+                    </header>
+                </div>
+                </div>
+            </div>
+            </section>
+        
+    </main>
+    <footer id="#xxss">
+            <h3 class="h3_protectora">Redes Sociales</h3>
+            <div class="container">
+                <h4><a href="#">twitter</a></h4>
+                <h4><a href="#">instagram</a></h4>
+                <h4><a href="#">facebook</a></h4>
+            </div>
+    </footer>
+</body>
+</html>
